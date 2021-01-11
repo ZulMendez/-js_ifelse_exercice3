@@ -112,32 +112,54 @@ if (resp != tabRep[2]) {
 // - ## Prompt()
 //     - ## prompt() me permet de poser une question à l'utilisateur,la réponse qu'il entrera sera en suite stockée dans la variable "reponse".
 
-//     - ## let reponse = prompt("Bonjour comment vas-tu ?");
+    let reponse = prompt("Bonjour comment vas-tu ?");
 
 //     - ## J'affiche la réponse donnée par l'utilisateur
 
-//     - ## console.log(reponse);
+    console.log(reponse);
 
 // - ## Alert()
 //     - ## let question = prompt('Comment vas-tu ?');
 
 //     - ## alert() permet d'ouvrir une boite de dialogue avec la valeur que je mentionnerai entre les parenthèses.
 
-//     - ## alert("Super je suis content que tu ailles bien");
+    alert("Super je suis content que tu ailles bien");
 
+    let question = prompt('comment vas-tu?');
+
+    if (question == 'bien') {
+        alert("Super je suis content que tu ailles bien");
+    }
+    else if (question == 'très bien') {
+        alert('Woaw tu as la pêche !');
+    }
+    else {
+        alert('courage!');
+    };
 // - ## Exercice
 //     - ## Le but de l’exercice est de créer  un « programme » permettant de vous répondre SUR LA CONSOLE .
 
 //     - ## Vous aurez besoin de créer une variable contenant la fonction prompt avec comme paramètres « Quelle temps fait-il aujourd’hui ? « 
-
+let temps = prompt(`Quelle temps fait-il aujourd’hui ?`);
 //     - ## Le programme doit ce comporter de cette manière :
 
 //     - ## Si vous écrivez « soleil » dans votre prompt , la console vous réponds «  Sortez en T-shirt »
-
+if (temps == 'soleil') {
+    console.log('sortez en t-shirt');
+}
 //     - ## Si vous écrivez « vent » dans votre prompt, la console vous réponds « Sortez en Pull »
-
+else if (temps == 'vent') {
+    console.log('sortez en pull');
+}
 //     - ## Si vous écrivez « pluie » dans votre prompt, la console vous réponds « Mettez une veste »
-
+else if (temps == 'pluie') {
+    console.log('mettez une veste');
+}
 //     - ## Si vous écrivez « Neïge  » dans votre prompt, la console vous réponds « Reste chez toi, il fait froid »
-
+else if (temps== 'neige') {
+    console.log('reste chez toi il fait froid');
+}
 //     - ## Et si vous écrivez un message est différent de toute ceux inscrits au-dessus, la console vous réponds « je n’ai pas compris »
+else {
+    console.log(`je n'ai pas compris`);
+}
